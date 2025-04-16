@@ -18,7 +18,7 @@ export default function Landing() {
   return (
     <div>
       <div className={`${roboto.variable} flex justify-center `}>
-        <label className="text-[350px] font-roboto text-[#353439] font-bold text-shadow-lg/30">AMBHER</label>
+        <label className="text-[350px] font-roboto text-[#353439] font-bold text-shadow-lg/30">AMBHERR</label>
       </div>
 
       <div className='flex justify-center  h-130'>
