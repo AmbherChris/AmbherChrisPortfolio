@@ -7,13 +7,13 @@ import About from "./Components/about";
 
 export default function Home() {
   return (
-    <div className="">
-    <div >
+   
+  <main>
     <NavBar />
     <Landing/>
     <About />
     <Skills />  
-    </div>
-    </div>
+</main>
+
   );
 }
