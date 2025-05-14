@@ -25,7 +25,7 @@ export default function Landing() {
         <h1 className="name3 ">
           C&nbsp; RIS
         </h1>
-        <div className="flex justify-center items-center gap-2 mt-25 ">
+        <div className="icon_container ">
           <Image
             src="/fb.png"       // Place the image inside /public folder
             alt="Description"

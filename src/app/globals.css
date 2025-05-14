@@ -58,7 +58,10 @@ body {
   @apply text-5xl   scale-y-208  absolute  top-[42px]
 }
 .name3 {
-  @apply text-5xl absolute w-lg ml-11.5  top-[59px]
+  @apply text-5xl absolute w-lg ml-11.5  top-[59px] 
+}
+.icon_container{
+  @apply flex justify-center items-center gap-2 mt-25
 }
 
 
@@ -68,6 +71,9 @@ body {
 @media (min-width: 640px) {
   .name1 {
     @apply text-6xl
+  }
+  .name2 {
+    @apply left-20
   }
 }
 
