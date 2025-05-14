@@ -70,7 +70,7 @@ body {
 
 @media (min-width: 640px) {
   .name1 {
-    @apply text-6xl
+    @apply text-9xl
   }
   .name2 {
     @apply left-20
