@@ -31,7 +31,7 @@ export default function Landing() {
             alt="Description"
             width={512}
             height={512}
-            className="h-6 w-auto mr-1"
+            className="fb"
           />
 
           <Image
@@ -39,28 +39,29 @@ export default function Landing() {
             alt="Description"
             width={512}
             height={512}
-            className="h-6.5 w-auto mb-[2px]"
+            className="linkedin"
           />
           <Image
             src="/mail.png"       // Place the image inside /public folder
             alt="Description"
             width={512}
             height={512}
-            className="h-9 w-auto"
+            className="mail"
           />
           <Image
             src="/github.png"       // Place the image inside /public folder
             alt="Description"
             width={512}
             height={512}
-            className="h-6.5 w-auto"
+            className="github"
           />
 
           
 
 
         </div>
-        <p className="text-center text-[12px] w-[85%] mt-1 ">
+
+        <p className="home_words ">
             I'm a creative individual with a keen interest in designing, passionate about creating clean and user-friendly interfaces with a strong focus on UX in the tech field. I'm always eager to learn and grow as a designer and developer.
           </p>
       </div>

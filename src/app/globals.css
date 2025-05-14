@@ -27,7 +27,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  
+
 }
 
 .navbar_text {
@@ -48,46 +48,131 @@ body {
 }
 
 .name_container {
-  @apply relative mt-20 flex flex-col  items-center text-center
+  @apply relative mt-20 flex flex-col items-center text-center
 }
 
 .name1 {
- @apply text-6xl absolute top-[17px] mr-12
+  @apply text-6xl absolute top-[17px] mr-12
 }
+
 .name2 {
-  @apply text-6xl   scale-y-213  absolute  top-[42.5px]
+  @apply text-6xl scale-y-213 absolute top-[42.5px]
 }
+
 .name3 {
-  @apply text-6xl absolute w-lg ml-14  top-[65px] 
+  @apply text-6xl absolute w-lg ml-14 top-[65px]
 }
-.icon_container{
-  @apply flex justify-center items-center gap-2 mt-33
+
+.icon_container {
+  @apply flex justify-center items-center gap-2 mt-30
 }
+
+.fb {
+  @apply h-6 w-auto mr-1
+}
+
+.linkedin {
+  @apply h-6.5 w-auto mb-[2px]
+}
+
+.mail {
+  @apply h-9 w-auto
+}
+
+.github {
+  @apply h-6.5 w-auto
+}
+
+.home_words {
+  @apply text-center text-[12px] w-[20rem] mt-1 h-50
+}
+
+
+
+/*about page style*/
+
+.about_container {
+  @apply flex flex-col  h-300 w-full items-center gap-5 pt-10
+}
+.pic_container {
+  @apply flex justify-center w-[17rem] h-auto bg-[#f8f9fa] absolute z-4 top-150 px-2 pt-2 pb-11 rounded-[23px] text-center shadow-md
+}
+.about_word_container {
+  @apply flex bg-[#f8f9fa] w-[20rem] relative mt-48 rounded-[20px] z-1 justify-center shadow-md pb-5
+}
+
+.about_words {
+  @apply mt-65 text-[12px] w-[80%] text-justify
+}
+
+.skills_container {
+  @apply bg-[#f8f9fa] w-full text-center h-auto pt-4 pb-11 shadow-md
+}
+
+.type_of_skills {
+  @apply text-[3] font-bold
+}
+
+
+
 
 
 
 
 
 @media (min-width: 640px) {
+
+  /*small home page style*/
   .name1 {
-    @apply text-9xl
+    @apply text-9xl top-15 mr-18
   }
+
   .name2 {
-    @apply left-20
+    @apply text-9xl top-28 ml-8
+  }
+
+  .name3 {
+    @apply text-9xl top-40 ml-37
+  }
+
+  .icon_container {
+    @apply mt-70 gap-10
+  }
+
+  .fb {
+    @apply h-15 w-auto mr-3
+  }
+  .linkedin {
+    @apply h-17 w-auto mb-[2px]
+  }
+  .mail {
+    @apply h-25 w-auto
+  }
+  .github {
+    @apply h-17 w-auto
+  }
+  .home_words {
+  @apply text-center text-[20px] w-[40rem] mt-1 h-50
+}
+
+  /*small about page style*/
+  .about_word_container {
+    @apply w-[30rem]
+  }
+
+  .about_words {
+    @apply mt-58
+  }
+
+  .pic_container {
+    @apply top-200
   }
 }
 
 
-@media (min-width: 768px) {
-  .name1 {
-    @apply text-6xl
-  }
-}
 
 
-@media (min-width: 1024) {
-  .name1 {
-    @apply text-9xl
-  }
-}
+@media (min-width: 768px) {}
 
+
+@media (min-width: 1024) {}

@@ -87,16 +87,16 @@ export default function About() {
 
 
     return (
-        <div className="flex flex-col  h-300 w-full items-center gap-5 pt-10">
-            <div className=" flex justify-center w-[80%] h-auto bg-[#f8f9fa] absolute z-4 top-110 px-2 pt-2 pb-11 rounded-[23px] text-center shadow-md">
-                <div className="bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%]  w-[100%] h-80   rounded-[20px] ">
+        <div className="about_container">
+            <div className=" pic_container">
+                <div className="bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%]  w-full h-80   rounded-[20px] ">
                     <h3 className="text-sm mt-83 font-bold text-black">AMBHER CHRIS NARCISO</h3>
                 </div>
             </div>
 
 
-            <div className="flex bg-[#f8f9fa] w-[95%] h-135 mt-80 rounded-[20px] z-1  justify-center shadow-md pb-4">
-                <p className="mt-35 text-[12px] w-[78%]  text-justify">
+            <div className="about_word_container">
+                <p className="  about_words">
                     &nbsp; &nbsp; I'm a  UI/UX designer with a passion for creating simple and beautiful designs that are easy to use. I love designing apps and websites that deliver a great experience for users, and I always focus on making things clean, functional, and user-friendly.
                     <br />
                     <br />
@@ -106,14 +106,14 @@ export default function About() {
                     &nbsp;&nbsp;When I’m not designing, you’ll probably find me watching anime, reading manga and manhua, or sipping on coffee. Designing and staying creative is what keeps me inspired every day.
                 </p>
             </div>
-<h3 className="z-5 top-200 text-md font-semibold ">Skills</h3>
-            <div className="bg-[#f8f9fa] w-full  text-center h-auto pt-4 pb-11  shadow-md">
 
-                
+            <h3 className="z-5 top-200 text-md font-semibold ">Skills</h3>
+
+            <div className="skills_container">
                 {Object.entries(grouped).map(([type, items]) => (
                     <div key={type}>
 
-                        <h2 className="text-3 font-bold">{type}</h2>
+                        <h2 className="type_of_skills">{type}</h2>
                         <div className="flex items-center justify-center gap-3 ">
 
                             {items.map(item => (
@@ -125,7 +125,7 @@ export default function About() {
                             ))}
                         </div>
 
-                        
+
                     </div>
                 ))}
 
