@@ -52,7 +52,7 @@ body {
 }
 
 .name1 {
- @apply text-5xl absolute top-[22px] mr-9
+ @apply text-7xl absolute top-[22px] mr-9
 }
 .name2 {
   @apply text-5xl   scale-y-208  absolute  top-[42px]
