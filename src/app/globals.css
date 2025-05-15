@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap');
 @import "tailwindcss";
 
 
 
-
+/*--foreground: #dee2e6;*/
 
 
 :root {
-  --background: #dee2e6;
+  --background: #f8f9fa;
   /*--foreground: #171717;*/
 }
 
@@ -33,6 +34,8 @@ body {
 
 }
 
+/*setting fonts*/
+
 .navbar_text {
   @apply text-[#D9D9D9] text-[25px]
 }
@@ -45,6 +48,15 @@ body {
 
 
 /*home page style*/
+.name1, .name2, .name3, .skills_name {
+  font-family: 'Onest', sans-serif;
+}
+.about_words {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
 
 .home {
   @apply flex flex-col justify-center items-center mt-15 
@@ -57,17 +69,15 @@ body {
 .name1 {
   @apply text-6xl absolute top-[17px] mr-12 
 
-  
 }
-.name1, .name2, .name3 {
-  font-family: 'Onest', sans-serif;
-}
+
+
 .name2 {
-  @apply text-6xl scale-y-213 absolute top-[42px] ml-2
+  @apply text-6xl scale-y-214 absolute top-[42.5px] ml-2
 }
 
 .name3 {
-  @apply text-6xl absolute w-lg ml-14 top-[65px]
+  @apply text-6xl absolute w-lg ml-14 top-[66px]
 }
 
 .icon_container {
@@ -91,44 +101,59 @@ body {
 }
 
 .home_words {
-  @apply text-center text-[12px] w-[20rem] mt-1 h-50
+  @apply text-center text-[12px] w-[80%] mt-1 h-50
 }
 
 
 
 /*about page style*/
+.about_title {
 
+  @apply text-[25px] font-bold  mt-50
+
+}
+
+.personal_info_container{
+  @apply flex-col
+}
+.about_name {
+  @apply text-sm  font-bold text-black  mt-5 text-center
+}
 .about_container {
-  @apply flex flex-col  h-300 w-full items-center gap-5 pt-10
+  @apply flex flex-col  max-h-full w-full items-center  
 }
 .pic_container {
-  @apply flex justify-center w-[17rem] h-auto bg-[#f8f9fa] absolute z-4 top-150 px-2 pt-2 pb-11 rounded-[23px] text-center shadow-md
+  @apply flex justify-center   bg-[#173a5e]  z-4   p-2  rounded-[23px] text-center shadow-md left-23 w-fit h-80
 }
 .about_word_container {
-  @apply flex bg-[#f8f9fa] w-[20rem] relative mt-48 rounded-[20px] z-1 justify-center shadow-md pb-5
+  @apply flex flex-col bg-[#f8f9fa] w-[20rem]  top-200  rounded-[20px] z-1 justify-center items-center  shadow-lg pb-5
 }
 
 .about_words {
-  @apply mt-65 text-[12px] w-[80%] text-justify
+  @apply  text-[12px] w-[80%] text-justify mt-5
 }
 
 
 /*skills page style*/
 .skills_container {
-  @apply bg-[#f8f9fa] w-full text-center h-auto pt-4 pb-11 shadow-md
+  @apply bg-[#dee2e6] w-full  p-10 items-center h-auto pt-4 pb-11 shadow-md
 }
 
 .type_of_skills {
-  @apply text-[1rem] font-bold
+  @apply text-[1rem] font-bold flex flex-col
 }
 .skills_name_container {
-  @apply flex  bg-[#f8f9fa] w-auto h-auto p-2 items-center justify-center text-center gap-2 rounded-lg my-2 shadow-sm
+  @apply flex  bg-[#f8f9fa] w-fit h-auto p-2 items-center   gap-2 rounded-lg my-2 shadow-sm
 }
 .skills_name {
-  @apply text-sm
+  @apply text-[10px]
 }
 .skills_icon {
   @apply w-4 h-auto
+}
+
+.hobby_icons {
+  @apply w-5 h-auto stroke-black stroke-3
 }
 
 
@@ -169,20 +194,29 @@ body {
     @apply h-17 w-auto
   }
   .home_words {
-  @apply text-center text-[20px] w-[450px] mt-1 h-50
+  @apply text-center text-[20px] w-[550px] mt-1 h-50
 }
 
   /*small about page style*/
+  .about_name {
+  @apply text-[16px] font-bold mt-10
+}
+.personal_info_container{
+  @apply flex flex-row  gap-5
+}
+.about_title {
+  @apply text-[30px] font-bold mt-80 ml-46 absolute z-10
+}
   .about_word_container {
-    @apply w-[30rem]
+    @apply w-[30rem] mt-80
   }
 
   .about_words {
-    @apply mt-63
+    @apply mt-5 text-[16px]
   }
 
   .pic_container {
-    @apply top-200
+    @apply w-50 h-70
   }
 
 
@@ -190,16 +224,17 @@ body {
   /*small skills page style*/
 
   .skills_name_container {
-  @apply flex  bg-[#f8f9fa] w-auto h-auto px-4 items-center justify-center text-center gap-2 rounded-lg my-2 shadow-sm
+  @apply   w-auto h-auto px-4   
 }
+
 .type_of_skills {
-  @apply text-[20px] font-bold 
+  @apply text-[20px] 
 }
 .skills_container {
-  @apply bg-[#f8f9fa] w-full text-center h-auto pt-4 pb-11 shadow-md
+  @apply  w-full  h-auto pt-4 pb-11 pl-20
 }
 .skills_name {
-  @apply text-[20px] 
+  @apply text-[16px] 
 }
 .skills_icon {
   @apply w-7 h-auto 

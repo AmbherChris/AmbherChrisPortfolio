@@ -27,6 +27,7 @@ export default function Landing() {
           C&nbsp; RIS
         </h1>
         <div className="icon_container ">
+          <a href='https://www.facebook.com/profile.php?id=100016918140881' target='_blank'>
           <Image
             src="/fb.png"       // Place the image inside /public folder
             alt="Description"
@@ -34,6 +35,7 @@ export default function Landing() {
             height={512}
             className="fb"
           />
+          </a>
 
           <Image
             src="/linkedin.png"       // Place the image inside /public folder
