@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 @import "tailwindcss";
+
+
+
 
 
 
@@ -44,7 +47,7 @@ body {
 /*home page style*/
 
 .home {
-  @apply flex flex-col justify-center items-center mt-15
+  @apply flex flex-col justify-center items-center mt-15 
 }
 
 .name_container {
@@ -52,9 +55,13 @@ body {
 }
 
 .name1 {
-  @apply text-6xl absolute top-[17px] mr-12
-}
+  @apply text-6xl absolute top-[17px] mr-12 
 
+  
+}
+.name1, .name2, .name3 {
+  font-family: 'Onest', sans-serif;
+}
 .name2 {
   @apply text-6xl scale-y-213 absolute top-[42.5px]
 }
@@ -105,14 +112,24 @@ body {
   @apply mt-65 text-[12px] w-[80%] text-justify
 }
 
+
+/*skills page style*/
 .skills_container {
   @apply bg-[#f8f9fa] w-full text-center h-auto pt-4 pb-11 shadow-md
 }
 
 .type_of_skills {
-  @apply text-[3] font-bold
+  @apply text-[1rem] font-bold
 }
-
+.skills_name_container {
+  @apply flex  bg-[#f8f9fa] w-auto h-auto p-2 items-center justify-center text-center gap-2 rounded-lg my-2 shadow-sm
+}
+.skills_name {
+  @apply text-sm
+}
+.skills_icon {
+  @apply w-4 h-auto
+}
 
 
 
@@ -124,19 +141,19 @@ body {
 
   /*small home page style*/
   .name1 {
-    @apply text-9xl top-15 mr-18
+    @apply text-9xl top-15 mr-18 w-200
   }
 
   .name2 {
-    @apply text-9xl top-28 ml-8
+    @apply text-9xl top-28 ml-12
   }
 
   .name3 {
-    @apply text-9xl top-40 ml-37
+    @apply text-9xl top-40 ml-39
   }
 
   .icon_container {
-    @apply mt-70 gap-10
+    @apply mt-67 gap-10
   }
 
   .fb {
@@ -152,7 +169,7 @@ body {
     @apply h-17 w-auto
   }
   .home_words {
-  @apply text-center text-[20px] w-[40rem] mt-1 h-50
+  @apply text-center text-[20px] w-[450px] mt-1 h-50
 }
 
   /*small about page style*/
@@ -161,18 +178,47 @@ body {
   }
 
   .about_words {
-    @apply mt-58
+    @apply mt-63
   }
 
   .pic_container {
     @apply top-200
   }
+
+
+
+  /*small skills page style*/
+
+  .skills_name_container {
+  @apply flex  bg-[#f8f9fa] w-auto h-auto px-4 items-center justify-center text-center gap-2 rounded-lg my-2 shadow-sm
+}
+.type_of_skills {
+  @apply text-[20px] font-bold 
+}
+.skills_container {
+  @apply bg-[#f8f9fa] w-full text-center h-auto pt-4 pb-11 shadow-md
+}
+.skills_name {
+  @apply text-[20px] 
+}
+.skills_icon {
+  @apply w-7 h-auto 
+}
+
 }
 
 
 
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+.name1 {
+
+}
 
 
-@media (min-width: 1024) {}
+
+
+}
+
+
+@media (min-width: 1024px) {}

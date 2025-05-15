@@ -114,12 +114,12 @@ export default function About() {
                     <div key={type}>
 
                         <h2 className="type_of_skills">{type}</h2>
-                        <div className="flex items-center justify-center gap-3 ">
+                        <div className=" flex items-center justify-center gap-3 ">
 
                             {items.map(item => (
-                                <div key={item.name} className="flex  bg-[#f8f9fa] w-fit h-auto p-2 items-center justify-center text-center gap-2 rounded-lg my-2 shadow-sm ">
-                                    <img src={item.image} alt={item.name} className="w-4 h-auto " />
-                                    <p className="text-[10px]">{item.name}</p>
+                                <div key={item.name} className="skills_name_container  ">
+                                    <img src={item.image} alt={item.name} className="skills_icon " />
+                                    <p className="skills_name">{item.name}</p>
 
                                 </div>
                             ))}

@@ -1,14 +1,14 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}', // if you're using App Router
+    './app/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['var(--font-roboto)', 'sans-serif'],
+        onest: ['Onest', 'sans-serif'], // 👈 this makes `font-onest` usable
+        roboto: ['var(--font-roboto)'],  // optional: to use Roboto
       },
     },
   },

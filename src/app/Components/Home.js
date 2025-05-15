@@ -13,13 +13,14 @@ const roboto = Roboto({
 
 export default function Landing() {
   return (
-    <div className='home'>
+    <div className='home '>
        <div className="name_container">
-        <h1 className=" name1">
+
+        <h1 className=" name1  font-onest">
           AMB&nbsp; ER
         </h1>
 
-        <h1 className="name2 ">
+        <h1 className="name2 font-onest ">
           H
         </h1>
         <h1 className="name3 ">
