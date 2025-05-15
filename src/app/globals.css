@@ -63,7 +63,7 @@ body {
   font-family: 'Onest', sans-serif;
 }
 .name2 {
-  @apply text-6xl scale-y-213 absolute top-[42.5px]
+  @apply text-6xl scale-y-213 absolute top-[42px] ml-2
 }
 
 .name3 {
