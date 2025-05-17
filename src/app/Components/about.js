@@ -1,7 +1,7 @@
 import { skills } from "../db/db";
 import { aboutMe } from "../db/db";
 import { Hobby } from "../db/db";
-import Image from "next/image";
+
 
 export default function About() {
 
@@ -30,7 +30,7 @@ export default function About() {
                 <div className="personal_info_container">
                     {/* IMAGE SECTION */}
                     <div className="pic_container">
-                        <div className="bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-fill rounded-[20px]"></div>
+                        <div className="bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-full rounded-[20px]"></div>
                     </div>
 
 
@@ -38,10 +38,10 @@ export default function About() {
 
                     <div>
                         <p className="about_name">{aboutMe[0].myName}</p>
-                        <p>address</p>
-                        <p>age</p>
-                        <p>bday</p>
-                        <p>nationality</p>
+                        <p>Address: {aboutMe[0].address}</p>
+                        <p>Age: {aboutMe[0].age}</p>
+                        <p>Birthday:{aboutMe[0].bday}</p>
+                        <p>Nationality: {aboutMe[0].nationality}</p>
                     </div>
                 </div>
 
@@ -86,10 +86,6 @@ export default function About() {
 
 
             </div>
-
-
-
-
 
 <hr />
 

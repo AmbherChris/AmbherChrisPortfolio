@@ -123,8 +123,9 @@ body {
   @apply flex flex-col  max-h-full w-full items-center  
 }
 .pic_container {
-  @apply flex justify-center   bg-[#173a5e]  z-4   p-2  rounded-[23px] text-center shadow-md left-23 w-fit h-80
+  @apply flex justify-center   bg-white  z-4   p-2  rounded-[23px] text-center shadow-md left-23 w-fit h-80
 }
+
 .about_word_container {
   @apply flex flex-col bg-[#f8f9fa] w-[20rem]  top-200  rounded-[20px] z-1 justify-center items-center  shadow-lg pb-5
 }
@@ -166,35 +167,35 @@ body {
 
   /*small home page style*/
   .name1 {
-    @apply text-9xl top-15 mr-18 w-200
+    @apply text-8xl top-15 mr-8 w-200
   }
 
   .name2 {
-    @apply text-9xl top-28 ml-12
+    @apply text-8xl top-25 ml-15
   }
 
   .name3 {
-    @apply text-9xl top-40 ml-39
+    @apply text-8xl top-34 ml-35
   }
 
   .icon_container {
-    @apply mt-67 gap-10
+    @apply mt-55 gap-6
   }
 
   .fb {
-    @apply h-15 w-auto mr-3
+    @apply h-12 w-auto mr-3
   }
   .linkedin {
-    @apply h-17 w-auto mb-[2px]
+    @apply h-14 w-auto mb-[2px]
   }
   .mail {
-    @apply h-25 w-auto
+    @apply h-20 w-auto
   }
   .github {
-    @apply h-17 w-auto
+    @apply h-14 w-auto
   }
   .home_words {
-  @apply text-center text-[20px] w-[550px] mt-1 h-50
+  @apply text-center text-[18px] w-[550px] mt-1 h-50
 }
 
   /*small about page style*/
@@ -216,7 +217,7 @@ body {
   }
 
   .pic_container {
-    @apply w-50 h-70
+    @apply w-50 h-70 bg-[blue]
   }
 
 
@@ -246,14 +247,107 @@ body {
 
 
 @media (min-width: 768px) {
-.name1 {
+
+  .name1 {
+    @apply text-9xl top-10 mr-8 w-200
+  }
+
+  .name2 {
+    @apply text-9xl top-[94px] ml-22 scale-y-211
+  }
+
+  .name3 {
+    @apply text-9xl top-35 ml-49
+  }
+
+  .icon_container {
+    @apply mt-65 gap-6
+  }
+
+
+ .fb {
+    @apply h-15 w-auto mr-3
+  }
+  .linkedin {
+    @apply h-17 w-auto mb-[2px]
+  }
+  .mail {
+    @apply h-25 w-auto
+  }
+  .github {
+    @apply h-17 w-auto
+  }
+  .home_words {
+  @apply text-center text-[19px] w-[590px] mt-1 h-50
+}
+
+  /*small about page style*/
+  .about_name {
+  @apply text-[16px] font-bold mt-16
+}
+
+.pic_container {
+  @apply flex justify-center   bg-white  z-4   p-2  rounded-[23px] text-center shadow-md ml-15 w-60 h-90
+}
+.personal_info_container{
+  @apply flex flex-row  gap-5 justify-start mr-35
+}
+.about_title {
+  @apply text-[40px] font-bold mt-80 ml-55 absolute z-10
+}
+  .about_word_container {
+    @apply w-[40rem] mt-80
+  }
+
+  .about_words {
+    @apply mt-5 text-[16px]
+  }
+
+
+
+
+  /*small skills page style*/
+
+  .skills_name_container {
+  @apply   w-auto h-auto px-4   
+}
+
+.type_of_skills {
+  @apply text-[20px] 
+}
+.skills_container {
+  @apply  w-full  h-auto pt-4 pb-11 pl-20
+}
+.skills_name {
+  @apply text-[16px] 
+}
+.skills_icon {
+  @apply w-7 h-auto 
+}
+
+
+
+
+
+
+
+
+
+
+.pic_container {
+  @apply bg-fuchsia-950
+}
+
 
 }
 
 
 
 
+@media (min-width: 1024px) {
+.pic_container {
+  @apply bg-black
 }
 
 
-@media (min-width: 1024px) {}
+}

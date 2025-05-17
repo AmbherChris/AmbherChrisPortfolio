@@ -74,8 +74,14 @@ export const skills = [
 
 export const aboutMe = [
     {
-        myName: "Ambher Chris Narciso"
+        myName: "Ambher Chris Narciso",
+        address: 'Capas, Tarlac',
+        age: "22",
+        bday: "Aug 4, 2002",
+        nationality: "Filipino"
+
     },
+    
     
 ];
 
