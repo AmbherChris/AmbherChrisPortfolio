@@ -13,6 +13,10 @@
   /*--foreground: #171717;*/
 }
 
+
+
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -20,12 +24,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #1F1F1F;
-    --foreground: #e9ecef;
-  }
-}
+
 
 body {
   background: var(--background);
@@ -33,6 +32,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 
 }
+
+
+
+
 
 /*setting fonts*/
 
@@ -48,9 +51,17 @@ body {
 
 
 /*home page style*/
-.name1, .name2, .name3, .skills_name {
+.name1,
+.name2,
+.name3,
+.skills_name {
   font-family: 'Onest', sans-serif;
+
 }
+.downloadCV{
+  @apply flex px-4 w-45 h-9 top-86 left-102 py-2 items-center justify-center text-[#1F1F1F] rounded-lg hover:bg-[#1F1F1F] hover:text-[white] transition border border-[black]
+}
+
 .about_words {
   font-family: 'Montserrat', sans-serif;
 }
@@ -59,7 +70,7 @@ body {
 
 
 .home {
-  @apply flex flex-col justify-center items-center mt-15 
+  @apply flex flex-col justify-center items-center mt-15
 }
 
 .name_container {
@@ -67,8 +78,7 @@ body {
 }
 
 .name1 {
-  @apply text-6xl absolute top-[17px] mr-12 
-
+  @apply text-6xl absolute top-[17px] mr-12
 }
 
 
@@ -109,46 +119,51 @@ body {
 /*about page style*/
 .about_title {
 
-  @apply text-[25px] font-bold  mt-50
-
+  @apply text-[25px] font-bold mt-50
 }
 
-.personal_info_container{
+.personal_info_container {
   @apply flex-col
 }
+
 .about_name {
-  @apply text-sm  font-bold text-black  mt-5 text-center
+  @apply text-sm font-bold text-black mt-5 text-center
 }
+
 .about_container {
-  @apply flex flex-col  max-h-full w-full items-center  
+  @apply flex flex-col max-h-full w-full items-center
 }
+
 .pic_container {
-  @apply flex justify-center   bg-white  z-4   p-2  rounded-[23px] text-center shadow-md left-23 w-fit h-80
+  @apply flex justify-center bg-white z-4 p-2 rounded-[23px] text-center shadow-md left-23 w-fit h-80
 }
 
 .about_word_container {
-  @apply flex flex-col bg-[#f8f9fa] w-[20rem]  top-200  rounded-[20px] z-1 justify-center items-center  shadow-lg pb-5
+  @apply flex flex-col bg-[#f8f9fa] w-[20rem] top-200 rounded-[20px] z-1 justify-center items-center shadow-lg pb-5
 }
 
 .about_words {
-  @apply  text-[12px] w-[80%] text-justify mt-5
+  @apply text-[12px] w-[80%] text-justify mt-5
 }
 
 
 /*skills page style*/
 .skills_container {
-  @apply bg-[#dee2e6] w-full  p-10 items-center h-auto pt-4 pb-11 shadow-md
+  @apply bg-[#dee2e6] w-full p-10 items-center h-auto pt-4 pb-11 shadow-md
 }
 
 .type_of_skills {
   @apply text-[1rem] font-bold flex flex-col
 }
+
 .skills_name_container {
-  @apply flex  bg-[#f8f9fa] w-fit h-auto p-2 items-center   gap-2 rounded-lg my-2 shadow-sm
+  @apply flex bg-[#f8f9fa] w-fit h-auto p-2 items-center gap-2 rounded-lg my-2 shadow-sm
 }
+
 .skills_name {
   @apply text-[10px]
 }
+
 .skills_icon {
   @apply w-4 h-auto
 }
@@ -185,29 +200,36 @@ body {
   .fb {
     @apply h-12 w-auto mr-3
   }
+
   .linkedin {
     @apply h-14 w-auto mb-[2px]
   }
+
   .mail {
     @apply h-20 w-auto
   }
+
   .github {
     @apply h-14 w-auto
   }
+
   .home_words {
-  @apply text-center text-[18px] w-[550px] mt-1 h-50
-}
+    @apply text-center text-[18px] w-[550px] mt-1 h-50
+  }
 
   /*small about page style*/
   .about_name {
-  @apply text-[16px] font-bold mt-10
-}
-.personal_info_container{
-  @apply flex flex-row  gap-5
-}
-.about_title {
-  @apply text-[30px] font-bold mt-80 ml-46 absolute z-10
-}
+    @apply text-[16px] font-bold mt-10
+  }
+
+  .personal_info_container {
+    @apply flex flex-row gap-5
+  }
+
+  .about_title {
+    @apply text-[30px] font-bold mt-80 ml-46 absolute z-10
+  }
+
   .about_word_container {
     @apply w-[30rem] mt-80
   }
@@ -219,7 +241,8 @@ body {
   .pic_container {
     @apply w-50 h-70 bg-[blue]
   }
-  .pic{
+
+  .pic {
     @apply bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-full rounded-[20px]
   }
 
@@ -228,21 +251,24 @@ body {
   /*small skills page style*/
 
   .skills_name_container {
-  @apply   w-auto h-auto px-4   
-}
+    @apply w-auto h-auto px-4
+  }
 
-.type_of_skills {
-  @apply text-[20px] 
-}
-.skills_container {
-  @apply  w-full  h-auto pt-4 pb-11 pl-20
-}
-.skills_name {
-  @apply text-[16px] 
-}
-.skills_icon {
-  @apply w-7 h-auto 
-}
+  .type_of_skills {
+    @apply text-[20px]
+  }
+
+  .skills_container {
+    @apply w-full h-auto pt-4 pb-11 pl-20
+  }
+
+  .skills_name {
+    @apply text-[16px]
+  }
+
+  .skills_icon {
+    @apply w-7 h-auto
+  }
 
 }
 
@@ -268,36 +294,43 @@ body {
   }
 
 
- .fb {
+  .fb {
     @apply h-15 w-auto mr-3
   }
+
   .linkedin {
     @apply h-17 w-auto mb-[2px]
   }
+
   .mail {
     @apply h-25 w-auto
   }
+
   .github {
     @apply h-17 w-auto
   }
+
   .home_words {
-  @apply text-center text-[19px] w-[590px] mt-1 h-50
-}
+    @apply text-center text-[19px] w-[590px] mt-1 h-50
+  }
 
   /*small about page style*/
   .about_name {
-  @apply text-[16px] font-bold mt-16
-}
+    @apply text-[16px] font-bold mt-16
+  }
 
-.pic_container {
-  @apply flex justify-center   bg-white  z-4   p-2  rounded-[23px] text-center shadow-md ml-15 w-60 h-90
-}
-.personal_info_container{
-  @apply flex flex-row  gap-5 justify-start mr-35
-}
-.about_title {
-  @apply text-[40px] font-bold mt-80 ml-55 absolute z-10
-}
+  .pic_container {
+    @apply flex justify-center bg-white z-4 p-2 rounded-[23px] text-center shadow-md ml-15 w-60 h-90
+  }
+
+  .personal_info_container {
+    @apply flex flex-row gap-5 justify-start mr-35
+  }
+
+  .about_title {
+    @apply text-[40px] font-bold mt-80 ml-55 absolute z-10
+  }
+
   .about_word_container {
     @apply w-[40rem] mt-80
   }
@@ -312,35 +345,39 @@ body {
   /*small skills page style*/
 
   .skills_name_container {
-  @apply   w-auto h-auto px-4   
-}
+    @apply w-auto h-auto px-4
+  }
 
-.type_of_skills {
-  @apply text-[20px] 
-}
-.skills_container {
-  @apply  w-full  h-auto pt-4 pb-11 pl-20
-}
-.skills_name {
-  @apply text-[16px] 
-}
-.skills_icon {
-  @apply w-7 h-auto 
-}
+  .type_of_skills {
+    @apply text-[20px]
+  }
 
+  .skills_container {
+    @apply w-full h-auto pt-4 pb-11 pl-20
+  }
 
+  .skills_name {
+    @apply text-[16px]
+  }
 
-
-
+  .skills_icon {
+    @apply w-7 h-auto
+  }
 
 
 
 
 
-.pic_container {
-  @apply bg-fuchsia-950
-}
-.pic{
+
+
+
+
+
+  .pic_container {
+    @apply bg-fuchsia-950
+  }
+
+  .pic {
     @apply bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-full rounded-[20px]
   }
 
@@ -351,9 +388,9 @@ body {
 
 
 @media (min-width: 1024px) {
-.pic_container {
-  @apply bg-black
-}
+  .pic_container {
+    @apply bg-black
+  }
 
 
 }
