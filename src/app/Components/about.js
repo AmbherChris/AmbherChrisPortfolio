@@ -30,7 +30,7 @@ export default function About() {
                 <div className="personal_info_container">
                     {/* IMAGE SECTION */}
                     <div className="pic_container">
-                        <div className="bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-full rounded-[20px]"></div>
+                        <div className="pic"></div>
                     </div>
 
 

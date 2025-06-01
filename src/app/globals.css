@@ -219,6 +219,9 @@ body {
   .pic_container {
     @apply w-50 h-70 bg-[blue]
   }
+  .pic{
+    @apply bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-full rounded-[20px]
+  }
 
 
 
@@ -337,6 +340,9 @@ body {
 .pic_container {
   @apply bg-fuchsia-950
 }
+.pic{
+    @apply bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-full rounded-[20px]
+  }
 
 
 }
