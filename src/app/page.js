@@ -19,10 +19,7 @@ export default function Home() {
     <Landing />
     <Resume />
 
-    <DarkModeToggle />
-      <div className="mt-6 p-6 bg-gray-100 dark:bg-gray-900 rounded text-black dark:text-white">
-        Content changes with dark/light mode.
-      </div>
+    
 
     
     <About />
