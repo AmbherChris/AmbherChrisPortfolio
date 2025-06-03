@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import { Onest } from "next/font/google";
 import "./globals.css";
+import { Metadata } from 'next'
 
 // Roboto
 const roboto = Roboto({
@@ -17,16 +18,21 @@ const onest = Onest({
 });
 
 export const metadata = {
-  title: "Ambher Chris Narciso",
-  description: "Ambher Chris's Portfolio",
+  default: 'UI/UX & Multimedia Designer | Ambher',
+   description: 'Explore UI/UX and multimedia design work by Ambher — clean, user-centered digital experiences.',
+  keywords: 'UI/UX Designer, Multimedia Design, Web Design, Figma, Tailwind CSS, Mobile App UI',
+  authors: [{ name: 'Ambher' }],
   icons: {
     icon: "/favicon.svg",
   },
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} ${onest.variable}`}>
+    
       <body>{children}</body>
     </html>
   );
