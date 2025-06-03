@@ -1,7 +1,7 @@
 import { Roboto } from "next/font/google";
 import { Onest } from "next/font/google";
 import "./globals.css";
-import { Metadata } from 'next'
+
 
 // Roboto
 const roboto = Roboto({
@@ -18,10 +18,9 @@ const onest = Onest({
 });
 
 export const metadata = {
-  default: 'UI/UX & Multimedia Designer | Ambher',
-   description: 'Explore UI/UX and multimedia design work by Ambher — clean, user-centered digital experiences.',
+  title: "Ambher Chris Narciso",
+  description: 'Explore UI/UX and multimedia design work by Ambher — clean, user-centered digital experiences.',
   keywords: 'UI/UX Designer, Multimedia Design, Web Design, Figma, Tailwind CSS, Mobile App UI',
-  authors: [{ name: 'Ambher' }],
   icons: {
     icon: "/favicon.svg",
   },
