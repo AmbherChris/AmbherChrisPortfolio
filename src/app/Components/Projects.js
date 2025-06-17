@@ -19,7 +19,7 @@ export default function ProjectButtons() {
   return (
     <>
      <h2 className="self-center">Projects</h2>
-    <div className="flex  items-center justify-center gap-4 p-6">
+    <div className="flex flex-wrap items-center justify-center gap-4 p-6">
 
        
       {Projects.map((proj, index) => (
@@ -28,7 +28,7 @@ export default function ProjectButtons() {
           href={proj.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex justify-center gap-4 bg-white shadow-md hover:shadow-lg transition rounded-lg p-4 w-full max-w-lg border border-gray-200"
+          className="flex  justify-center gap-4 bg-white shadow-md hover:shadow-lg transition rounded-lg p-4 w-full max-w-lg border border-gray-200"
         >
           <img
             src={proj.image}

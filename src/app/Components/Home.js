@@ -21,7 +21,7 @@ export default function Landing() {
             alt="Description"
             width={1020}
             height={1020}
-            className="h-[500px] w-auto relative left-25 "
+            className="lg:h-[500px] h-50 w-auto relative lg:left-25 "
           />
 
         
