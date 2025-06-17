@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap');
-@import "tailwindcss";
+@import "tailwindcss"; 
 
 
 
@@ -70,327 +70,254 @@ body {
 
 
 .home {
-  @apply flex flex-col justify-center items-center mt-15
+  @apply flex flex-col justify-center items-center
+}
+.coffee {
+  @apply h-auto w-auto bg-amber-800
 }
 
 .name_container {
-  @apply relative mt-20 flex flex-col items-center text-center
+  @apply relative mt-15 flex flex-col items-center 
 }
 
 .name1 {
-  @apply text-6xl absolute top-[17px] mr-12
+  @apply text-6xl bg-amber-500 
+
+  sm:text-8xl 
+  
+  
+
+  md:text-9xl
+
+  
+  
+  
 }
 
 
 .name2 {
-  @apply text-6xl scale-y-214 absolute top-[42.5px] ml-2
-}
+  @apply text-6xl scale-y-214 absolute 
 
+  sm:text-8xl 
+  
+ 
+
+  md:text-9xl 
+  md:top-23.5
+  md:left-196 
+  md:scale-y-211
+
+}
+ 
 .name3 {
-  @apply text-6xl absolute w-lg ml-14 top-[66px]
+  @apply text-6xl relative w-lg 
+
+  sm:text-5xl 
+  
+
+  md:text-9xl 
+  md:top-[-27px]
+  md:left-48
 }
 
 .icon_container {
-  @apply flex justify-center items-center gap-2 mt-30
+  @apply flex justify-center items-center gap-2 
+
+ 
+  
+
+  
+  md:gap-6
+  
+
+}
+
+.resume_container{
+  @apply flex flex-col gap-2 absolute top-[200px] left-0
+
+
+  lg:left-[230px]
+  lg:top-[275px]
+}
+
+.view{
+  @apply flex h-9 px-4 w-45  top-60 left-102 py-2 bg-[#1F1F1F] items-center justify-center text-white rounded-lg hover:bg-[#f8f9fa] border hover:border-[#1F1F1F] hover:text-[#1F1F1F] transition
 }
 
 .fb {
   @apply h-6 w-auto mr-1
+
+  sm:h-12 
+  sm:w-auto 
+  sm:mr-3
+
+  md:h-15 
+  md:mr-3
 }
 
 .linkedin {
   @apply h-6.5 w-auto mb-[2px]
+
+  sm:h-14 
+  sm:w-auto 
+  sm:mb-[2px]
+
+  md:h-17 
+  md:mb-[2px]
 }
 
 .mail {
   @apply h-9 w-auto
+
+  sm:h-20 
+  sm:w-auto
+
+  md:h-25
 }
 
 .github {
   @apply h-6.5 w-auto
+
+  sm:h-14 sm:w-auto
+
+  md:h-17
+
 }
 
 .home_words {
-  @apply text-center text-[12px] w-[80%] mt-1 h-50
+  @apply text-center relative text-[12px] w-[80%] mt-1 
+  
+  sm:text-center 
+  sm:text-[18px] 
+  sm:w-[550px] 
+  sm:mt-1 
+  
+
+  md:text-center 
+  md:text-[19px] 
+  md:w-[590px] 
+  
+  
+  
 }
 
 
 
 /*about page style*/
 .about_title {
+  @apply flex text-[25px] font-bold bg-amber-900 absolute top-100
 
-  @apply text-[25px] font-bold mt-50
+
+  
 }
 
 .personal_info_container {
   @apply flex-col
+
+  sm:flex 
+  sm:flex-row 
+  sm:gap-5
+
+  md:flex 
+  md:flex-row 
+  md:gap-5 
+  md:justify-start 
+  md:mr-35
 }
 
 .about_name {
   @apply text-sm font-bold text-black mt-5 text-center
+
+  sm:text-[16px]  
+
+
+  md:text-[16px] 
+  
 }
 
 .about_container {
-  @apply flex flex-col max-h-full w-full items-center
+  @apply flex flex-col  w-auto  items-center bg-amber-600
 }
 
 .pic_container {
   @apply flex justify-center bg-white z-4 p-2 rounded-[23px] text-center shadow-md left-23 w-fit h-80
+
+  sm:w-50 
+  sm:h-70 
+  sm:bg-[blue]
+
+   md:bg-white  
+   md:ml-15 
+   md:w-60 
+   md:h-90
+
 }
+ .pic {
+    @apply bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-full rounded-[20px]
+    
+  }
 
 .about_word_container {
   @apply flex flex-col bg-[#f8f9fa] w-[20rem] top-200 rounded-[20px] z-1 justify-center items-center shadow-lg pb-5
+
+  sm:w-[30rem] 
+  sm:mt-80
+
+  md:w-[40rem]
 }
 
 .about_words {
   @apply text-[12px] w-[80%] text-justify mt-5
-}
 
+  sm:mt-5 
+  sm:text-[16px]
+
+  md:mt-5 
+  
+}
 
 /*skills page style*/
 .skills_container {
   @apply bg-[#dee2e6] w-full p-10 items-center h-auto pt-4 pb-11 shadow-md
+
+  sm:w-full 
+  sm:pt-4 
+  sm:pl-20
+
+ 
 }
 
 .type_of_skills {
   @apply text-[1rem] font-bold flex flex-col
+
+  sm:text-[20px]
+
+  md:text-[20px]
 }
 
 .skills_name_container {
   @apply flex bg-[#f8f9fa] w-fit h-auto p-2 items-center gap-2 rounded-lg my-2 shadow-sm
+
+  sm:w-auto 
+  sm:px-4
+
+  md:md:px-4
 }
 
 .skills_name {
   @apply text-[10px]
+
+  sm:text-[16px]
+
+  
 }
 
 .skills_icon {
   @apply w-4 h-auto
+
+  sm:w-7
 }
 
 .hobby_icons {
   @apply w-5 h-auto stroke-black stroke-3
-}
-
-
-
-
-
-
-
-@media (min-width: 640px) {
-
-  /*small home page style*/
-  .name1 {
-    @apply text-8xl top-15 mr-8 w-200
-  }
-
-  .name2 {
-    @apply text-8xl top-25 ml-15
-  }
-
-  .name3 {
-    @apply text-8xl top-34 ml-35
-  }
-
-  .icon_container {
-    @apply mt-55 gap-6
-  }
-
-  .fb {
-    @apply h-12 w-auto mr-3
-  }
-
-  .linkedin {
-    @apply h-14 w-auto mb-[2px]
-  }
-
-  .mail {
-    @apply h-20 w-auto
-  }
-
-  .github {
-    @apply h-14 w-auto
-  }
-
-  .home_words {
-    @apply text-center text-[18px] w-[550px] mt-1 h-50
-  }
-
-  /*small about page style*/
-  .about_name {
-    @apply text-[16px] font-bold mt-10
-  }
-
-  .personal_info_container {
-    @apply flex flex-row gap-5
-  }
-
-  .about_title {
-    @apply text-[30px] font-bold mt-80 ml-46 absolute z-10
-  }
-
-  .about_word_container {
-    @apply w-[30rem] mt-80
-  }
-
-  .about_words {
-    @apply mt-5 text-[16px]
-  }
-
-  .pic_container {
-    @apply w-50 h-70 bg-[blue]
-  }
-
-  .pic {
-    @apply bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-full rounded-[20px]
-  }
-
-
-
-  /*small skills page style*/
-
-  .skills_name_container {
-    @apply w-auto h-auto px-4
-  }
-
-  .type_of_skills {
-    @apply text-[20px]
-  }
-
-  .skills_container {
-    @apply w-full h-auto pt-4 pb-11 pl-20
-  }
-
-  .skills_name {
-    @apply text-[16px]
-  }
-
-  .skills_icon {
-    @apply w-7 h-auto
-  }
-
-}
-
-
-
-
-@media (min-width: 768px) {
-
-  .name1 {
-    @apply text-9xl top-10 mr-8 w-200
-  }
-
-  .name2 {
-    @apply text-9xl top-[94px] ml-22 scale-y-211
-  }
-
-  .name3 {
-    @apply text-9xl top-35 ml-49
-  }
-
-  .icon_container {
-    @apply mt-65 gap-6
-  }
-
-
-  .fb {
-    @apply h-15 w-auto mr-3
-  }
-
-  .linkedin {
-    @apply h-17 w-auto mb-[2px]
-  }
-
-  .mail {
-    @apply h-25 w-auto
-  }
-
-  .github {
-    @apply h-17 w-auto
-  }
-
-  .home_words {
-    @apply text-center text-[19px] w-[590px] mt-1 h-50
-  }
-
-  /*small about page style*/
-  .about_name {
-    @apply text-[16px] font-bold mt-16
-  }
-
-  .pic_container {
-    @apply flex justify-center bg-white z-4 p-2 rounded-[23px] text-center shadow-md ml-15 w-60 h-90
-  }
-
-  .personal_info_container {
-    @apply flex flex-row gap-5 justify-start mr-35
-  }
-
-  .about_title {
-    @apply text-[40px] font-bold mt-80 ml-55 absolute z-10
-  }
-
-  .about_word_container {
-    @apply w-[40rem] mt-80
-  }
-
-  .about_words {
-    @apply mt-5 text-[16px]
-  }
-
-
-
-
-  /*small skills page style*/
-
-  .skills_name_container {
-    @apply w-auto h-auto px-4
-  }
-
-  .type_of_skills {
-    @apply text-[20px]
-  }
-
-  .skills_container {
-    @apply w-full h-auto pt-4 pb-11 pl-20
-  }
-
-  .skills_name {
-    @apply text-[16px]
-  }
-
-  .skills_icon {
-    @apply w-7 h-auto
-  }
-
-
-
-
-
-
-
-
-
-
-  .pic_container {
-    @apply bg-fuchsia-950
-  }
-
-  .pic {
-    @apply bg-[url('/me.jpg')] bg-[size:170%] bg-[position:50%_50%] w-50 h-full rounded-[20px]
-  }
-
-
-}
-
-
-
-
-@media (min-width: 1024px) {
-  .pic_container {
-    @apply bg-black
-  }
-
-
 }
