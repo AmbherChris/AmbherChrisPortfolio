@@ -16,16 +16,15 @@ export default function Landing() {
     <div className='home '>
        <div className="name_container">
 
-        <h1 className=" name1  font-onest">
-          AMB&nbsp; ER
-        </h1>
+        <Image
+            src="/name.png"       // Place the image inside /public folder
+            alt="Description"
+            width={1020}
+            height={1020}
+            className="h-[500px] w-auto relative left-25 "
+          />
 
-        <h1 className="name2 font-onest ">
-          H
-        </h1>
-        <h1 className="name3 ">
-          C&nbsp; RIS
-        </h1>
+        
         <div className="icon_container ">
           <a href='https://www.facebook.com/profile.php?id=100016918140881' target='_blank'>
           <Image

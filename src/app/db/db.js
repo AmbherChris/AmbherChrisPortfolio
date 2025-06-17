@@ -110,5 +110,20 @@ export const Hobby = [
     
 ];
 
+export const Projects = [
+    {
+        project:"Pokemon Search",
+        image:"pokemon.png",
+        descriptions:"GreenGem is a platform for herbal plant enthusiasts, offering insights on herbs. GreenGem is the ultimate destination for herbal plant enthusiasts, offering valuable insights into the diverse world of botanical wonders. Our platform provides detailed information on various herbs, empowering users to explore their properties and applications with confidence.",
+        url:"https://find-pokemon-character.vercel.app/"
+    },
+    {
+        project:"GreenGemUUUU",
+        image:"/ggcover.png",
+        descriptions:"",
+        url:"https://apkpure.com/greengem/com.app.greengem_app"
+    }
+];
+
 
   

@@ -1,6 +1,6 @@
 export default function Resume() {
     return (
-        <div className="flex flex-col gap-2 absolute top-75 left-102">
+        <div className="resume_container">
             <a
                 href="/Ambher Chris Narciso-Resume.pdf"
                 target="_blank"
